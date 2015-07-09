@@ -71,3 +71,17 @@ Further help:
   man brew
   brew home
 ```
+
+## Useful application and their special install options
+
+```sh
+# MacVim
+brew install macvim --env-std --override-system-vim
+
+# rbenv, ruby-build
+brew install rbenv
+brew install ruby-build
+
+# Python
+brew install python
+```
