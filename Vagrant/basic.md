@@ -85,10 +85,29 @@ Vagrant.configure(2) do |config|
   config.vm.define "web" do |web|
     web.vm.box = "hashicorp/precise64"
   end
-  config.vm.define "web" do |db|
+  config.vm.define "db" do |db|
     db.vm.box = "hashicorp/precise64"
   end
 end
+```
+
+We also can define a primary VM
+
+```ruby
+Vagrant.configure(2) do |config|
+  config.vm.define "web", primary: true do |web|
+    web.vm.box = "hashicorp/precise64"
+  end
+  config.vm.define "db" do |db|
+    db.vm.box = "hashicorp/precise64"
+  end
+end
+```
+
+And you can start up only one of these VMs by name.
+
+```sh
+vagrant up web
 ```
 
 ### SSH config
