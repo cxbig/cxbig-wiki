@@ -60,6 +60,7 @@ vagrant plugin license [license-name]
 
 # List existing plugins
 vagrant plugin list
+
 vagrant plugin uninstall
 vagrant plugin update
 ```
@@ -119,12 +120,20 @@ Vagrant.configure(2) do |config|
 end
 ```
 
+### Port(s) forward
+
+```ruby
+Vagrant.configure(2) do |config|
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+end
+```
+
 ### Provider: Virtual Box config
 
 ```ruby
 Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "1024"
+    vb.memory = "2048"
     vb.cpus = 2
     vb.name = 'puppet'
   end
