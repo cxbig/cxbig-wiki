@@ -67,4 +67,4 @@ vagrant plugin update
 
 ## Vagrantfile
 
-See [Vagrantfile](cxbig-wiki/Vagrant/vagrantfile.md)
+See [Vagrantfile](vagrantfile.md)
