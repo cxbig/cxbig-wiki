@@ -124,7 +124,11 @@ end
 
 ```ruby
 Vagrant.configure(2) do |config|
+  # Standard configuration
   config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  # We can add a parameter for forwarded_port to avoid port collisions
+  config.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
 end
 ```
 
@@ -133,9 +137,10 @@ end
 ```ruby
 Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "2048"
-    vb.cpus = 2
-    vb.name = 'puppet'
+    vb.memory = "2048"      # unit is MB
+    vb.cpus = 2             # core number
+    vb.name = 'puppet'      # the name of the VM
+    vb.gui = true           # true or false, show GUI window when startup
   end
 end
 ```
