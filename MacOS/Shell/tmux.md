@@ -40,27 +40,46 @@ Any tmux action should start with this prefix shortcut, all actions below will n
 
 ```
 :			open tmux command line (like vim)
-d			detach current session
+?			list all available commands
 ```
 
 ### tmux session
 
+Tmux : mode
+
+```
+new -s new-session-name
+```
+
+Shortcuts
+
+```
+ctrl + d	no prefix ! close current session
+d			with prefix ! detach current session
+s			list all sessions and windows. can select anyone and jump to it
+```
 
 ### tmux window
 
 ```
 c			create a new window
+&			close current window
+w			list windows
 ,			change window name
 p			previous window
 n			next window
-w			list windows
+0-9			switch to the input number window
 ```
 
 ### tmux pane
 
 ```
-%			vertical split
-"			horizontal
+%			split - vertical
+"			split - horizontal
+up, down, left, right
+			switch to the pane on the direction
+x			close current pane (with prompt)
+q			display all pane number
 ```
 
 
