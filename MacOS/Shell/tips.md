@@ -4,7 +4,6 @@ _updating_
 
 ## Tricks
 
-
 ### Run command in different folder
 
 ```sh
