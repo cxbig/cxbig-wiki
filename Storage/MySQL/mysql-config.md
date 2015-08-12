@@ -2,7 +2,17 @@
 
 ## my.cnf
 
-### `innodb_file_per_table` in `mysqld`
+### No password for command line
+
+_Also check [command-line.md](command-line.md) for more usage detials_
+
+```ini
+[client]
+user=root
+password=root
+```
+
+### innodb_file_per_table in mysqld
 
 By default, this value is 0. After a long time use, MySQL will accumulate huge amount of content in file like `ibdata1`.
 
