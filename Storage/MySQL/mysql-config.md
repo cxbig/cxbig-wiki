@@ -4,7 +4,7 @@
 
 ### No password for command line
 
-_Also check [command-line.md](command-line.md) for more usage detials_
+_Also check [command-line.md](command-line.md) for more usage details_
 
 ```ini
 [client]
