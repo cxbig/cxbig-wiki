@@ -10,7 +10,7 @@ git branch -a
 git branch -l
 
 # show remote branches
-git branch -rf
+git branch -r
 ```
 
 ## Remove branches
