@@ -40,6 +40,5 @@ tab_width                = 4            (if indent_size set, no need to specify 
 end_of_line              = lf|crlf|cr   (Unix, DOS, Mac)
 insert_final_newline     = true|false
 trim_trailing_whitespace = true|false
-insert_final_newline     = true|false
 max_line_length          = 80
 ```
