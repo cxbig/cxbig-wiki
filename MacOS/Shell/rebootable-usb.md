@@ -1,5 +1,4 @@
-# Rebootable USB
-
+# Reboot-able USB
 
 ## Use command line to make
 
@@ -7,8 +6,8 @@ _Normally, Mac OS X install application will download to /Applications path dire
 
 ```sh
 sudo  \
-  /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia  \
+  /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia  \
   --volume /Volumes/<your_usb_drive>  \
-  --applicationpath /Applications/Install\ OS\ X\ Yosemite.app  \
+  --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app  \
   --nointeraction
 ```
