@@ -1,5 +1,25 @@
 # MySQL config
 
+## Config of brew-install-mysql
+
+### Get default config position
+
+```sh
+ls $(brew --prefix mysql)/support-files/my-*
+#=> /usr/local/opt/mysql/support-files/my-default.cnf
+```
+
+### Start to customize
+
+* Copy default config file out
+```sh
+sudo cp $(brew --prefix mysql)/support-files/my-default.cnf /etc/my.cnf
+```
+
+* Edit it
+
+
+
 ## my.cnf
 
 ### No password for command line
