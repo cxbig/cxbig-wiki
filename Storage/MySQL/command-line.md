@@ -18,15 +18,6 @@ mysql my_db < my_db.sql
 gunzip < my_db.sql.gz | mysql
 ```
 
-## Basic usage for `mysqldump`
-
-```sh
-# basic syntax
-mysqldump my_db > my_db.sql
-
-# compress at the same time
-mysqldump my_db | gzip -9 > my_db.sql.gz
-```
 
 
 ## Security
