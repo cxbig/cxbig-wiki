@@ -36,3 +36,18 @@ ls -1
 # 2. Get the first item
 ls -t1 | head -n1
 ```
+
+### Get file array without error
+
+*Only for `ZSH`*
+
+When trying to get a file array but no matches in scope, an error will be thrown:
+```sh
+for f (*.js); do echo $f; done
+# => zsh: no matches found: *.js
+```
+
+Then just add `(.N)` at the end of the pattern to get an empty array if no matches:
+```sh
+for f (*.js(.N)); do echo $f; done
+```
