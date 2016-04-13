@@ -16,7 +16,7 @@ mysqldump [options] my_db | gzip -9 > my_db.sql.gz
 
 Single transaction will prevent table(s) to be locked. And other queries from application will not be jammed.
 
-```sql
+```sh
 mysqldump --single-transaction my_db > my_db.sql
 ```
 
