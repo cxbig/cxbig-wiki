@@ -34,8 +34,12 @@ head -n Y file_name | tail -n (Y-X)
 head -n 20 file_name | tail -n 15
 ```
 
+## General permission fixing
 
+```sh
+# Fix files permission to 644
+find . -type f -exec chmod 644 {} \;
 
-
-
-<fin>
+# Fix folders permission to 755
+find . -type d -exec chmod 755 {} \;
+```
