@@ -33,9 +33,20 @@ LINES TERMINATED BY '\n'
 ```
 _Make sure there is no file exists. No way to rewrite a file from SQL._
 
+
+
 ## Command Line output
 
 ```sh
 # use '--silent' parameter will convert output to TSV format which without tab characters.
 mysql -h'host' -P'port' -u'user' -p db_name -e 'sql_command' --silent > output.tsv
+```
+
+
+
+## Special treatments
+### Remove `Definer`
+
+```
+<input> | sed -E 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | <output>
 ```
