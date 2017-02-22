@@ -43,3 +43,14 @@ find . -type f -exec chmod 644 {} \;
 # Fix folders permission to 755
 find . -type d -exec chmod 755 {} \;
 ```
+
+## Get script path
+
+```sh
+# script absolute path
+SCRIPT_PATH=$(readlink -f $0)
+
+# script absolute directory
+SCRIPT_DIR=`dirname $(readlink -f $0)
+```
+
