@@ -51,6 +51,5 @@ find . -type d -exec chmod 755 {} \;
 SCRIPT_PATH=$(readlink -f $0)
 
 # script absolute directory
-SCRIPT_DIR=`dirname $(readlink -f $0)
+SCRIPT_DIR=`dirname $(readlink -f $0)`
 ```
-
